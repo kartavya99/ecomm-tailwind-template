@@ -9,4 +9,5 @@ module.exports = {
     },
   },
   plugins: ["@tailwindcss/aspect-ratio"],
+  body: ["'Fira Sans Extra Condensed'", "sans-serif"],
 };

@@ -9,6 +9,7 @@ function App() {
     <>
       <Nav />
       <HomePage />
+
       {/* <ProductPage /> */}
       <Footer />
     </>
