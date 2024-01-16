@@ -9,7 +9,7 @@ const Nav = () => {
         </a>
       </div>
 
-      <label for="menu-toggle" className="pointer-cursor md:hidden block">
+      <label htmlFor="menu-toggle" className="pointer-cursor md:hidden block">
         <svg
           className="fill-current text-gray-900"
           xmlns="http://www.w3.org/2000/svg"
