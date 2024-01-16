@@ -47,6 +47,15 @@ const Nav = () => {
             <li>
               <Link
                 className="md:p-4 py-3 px-0 block uppercase "
+                to="/cart"
+                relative=""
+              >
+                Cart
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="md:p-4 py-3 px-0 block uppercase "
                 to="/register"
               >
                 Register

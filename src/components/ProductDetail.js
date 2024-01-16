@@ -308,7 +308,7 @@ const ProductsPage = () => {
                       </button>
                     </div>
                     <Link
-                      href="#"
+                      to="/cart"
                       className="w-full px-4 py-3 text-center text-white bg-indigo-600  border border-blue-600 dark:hover:bg-gray-700 dark:text-white dark:border-gray-700 dark:bg-gray-700 hover:bg-indigo-700 hover:text-white lg:w-1/2 rounded-xl"
                     >
                       Add to cart
@@ -316,7 +316,7 @@ const ProductsPage = () => {
                   </div>
                   <div className="flex gap-4 mb-6">
                     <Link
-                      href="#"
+                      to="#"
                       className="w-full px-4 py-3 text-center text-white bg-indigo-600 border border-transparent dark:border-gray-700 hover:border-blue-500 hover:text-white hover:bg-indigo-700 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-900 rounded-xl"
                     >
                       Buy now

@@ -3,6 +3,7 @@ import HomePage from "./components/HomePage";
 import ProductPage from "./components/ProductDetail";
 import Login from "./components/LoginPage";
 import RegisterPage from "./components/RegisterPage";
+import Cart from "./components/Cart";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/register/",
     element: <RegisterPage />,
+  },
+  {
+    path: "/cart",
+    element: <Cart />,
   },
 ]);
 

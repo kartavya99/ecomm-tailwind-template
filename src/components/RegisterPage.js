@@ -47,6 +47,7 @@ const RegisterPage = () => {
                             className="w-full px-4 py-3 mt-3 bg-gray-200 rounded-lg dark:text-gray-400 dark:bg-gray-800 "
                             name=""
                             placeholder="Enter your name"
+                            required
                           />
                         </div>
                         <div>
@@ -61,6 +62,7 @@ const RegisterPage = () => {
                             className="w-full px-4 py-3 mt-3 bg-gray-200 rounded-lg dark:text-gray-400 dark:bg-gray-800 "
                             name=""
                             placeholder="Enter your email"
+                            required
                           />
                         </div>
                         <div className="mt-5">
@@ -77,6 +79,7 @@ const RegisterPage = () => {
                                 className="w-full px-4 py-3 bg-gray-200 rounded-lg dark:text-gray-400 dark:bg-gray-800 "
                                 name=""
                                 placeholder="Enter password"
+                                required
                               />
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
