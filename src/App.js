@@ -1,7 +1,7 @@
 import "./App.css";
 import HomePage from "./components/HomePage";
 import Nav from "./components/Nav";
-import ProductPage from "./components/productPage";
+import ProductPage from "./components/ProductPage";
 import Footer from "./components/Footer";
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
       <Nav />
       <HomePage />
 
-      {/* <ProductPage /> */}
-      <Footer />
+      <ProductPage />
+      {/* <Footer /> */}
     </>
   );
 }
