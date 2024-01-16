@@ -36,12 +36,19 @@ const Nav = () => {
               </Link>
             </li>
             <li>
-              <Link className="md:p-4 py-3 px-0 block uppercase " to="#">
+              <Link
+                className="md:p-4 py-3 px-0 block uppercase "
+                to="/login"
+                relative=""
+              >
                 Sign In
               </Link>
             </li>
             <li>
-              <Link className="md:p-4 py-3 px-0 block uppercase " to="#">
+              <Link
+                className="md:p-4 py-3 px-0 block uppercase "
+                to="/register"
+              >
                 Register
               </Link>
             </li>
