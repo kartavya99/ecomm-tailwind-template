@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
     <header className="lg:px-16 px-4 bg-slate-100 flex flex-wrap items-center py-4 shadow-md">
       <div className="flex-1 flex justify-between items-center">
-        <a href="#" className="text-xl uppercase ">
+        <Link to="/" className="text-xl uppercase ">
           E-Commerce Platforme
-        </a>
+        </Link>
       </div>
 
       <label htmlFor="menu-toggle" className="pointer-cursor md:hidden block">
@@ -30,27 +31,27 @@ const Nav = () => {
         <nav>
           <ul className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
             <li>
-              <a className="md:p-4 py-3 px-0 block uppercase " href="#">
+              <Link className="md:p-4 py-3 px-0 block uppercase " to="/">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="md:p-4 py-3 px-0 block uppercase " href="#">
+              <Link className="md:p-4 py-3 px-0 block uppercase " to="#">
                 Sign In
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="md:p-4 py-3 px-0 block uppercase " href="#">
+              <Link className="md:p-4 py-3 px-0 block uppercase " to="#">
                 Register
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="md:p-4 py-3 px-0 block md:mb-0 mb-2 uppercase "
-                href="#"
+                to="#"
               >
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

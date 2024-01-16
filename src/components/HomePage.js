@@ -1,11 +1,13 @@
 import product from "../assets/data/product";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
     <>
       <Nav />
+
       <div className="bg-white">
         <div className="mx-auto max-w-xl px-0  py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-2">
           <header>
@@ -383,13 +385,13 @@ function HomePage() {
                       <div className="mt-4 flex justify-between">
                         <div>
                           <h3 className="text-sm text-black-800">
-                            <a href={product.href}>
+                            <Link to={`products/${product.id}`}>
                               <span
                                 aria-hidden="true"
                                 className="absolute inset-0 cursor-pointer"
                               />
                               {product.title}
-                            </a>
+                            </Link>
                           </h3>
                           <p className="mt-1 text-sm text-gray-500">
                             {product.brand}

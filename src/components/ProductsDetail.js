@@ -2,8 +2,16 @@ import React from "react";
 import IconProductPage from "./IconProductPage";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import { useParams, Link } from "react-router-dom";
+import products from "../assets/data/product";
 
-const productPage = () => {
+const ProductsPage = () => {
+  const params = useParams();
+  const prodId = parseInt(params.id);
+
+  const prod = products.find((obj) => obj.id === prodId);
+  // console.log(prod);
+
   return (
     <>
       <Nav />
@@ -14,7 +22,7 @@ const productPage = () => {
               <div className="w-full px-4 mb-8 md:w-1/2 md:mb-0">
                 <div className="sticky top-0 overflow-hidden ">
                   <div className="relative mb-6 lg:mb-10 lg:h-96">
-                    <a
+                    <Link
                       className="absolute left-0 transform lg:ml-2 top-1/2 translate-1/2"
                       href="#"
                     >
@@ -31,13 +39,13 @@ const productPage = () => {
                           d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
                         ></path>
                       </svg>
-                    </a>
+                    </Link>
                     <img
                       className="object-contain w-full lg:h-full"
-                      src="https://i.postimg.cc/0jwyVgqz/Microprocessor1-removebg-preview.png"
+                      src={prod.thumbnail}
                       alt=""
                     />
-                    <a
+                    <Link
                       className="absolute right-0 transform lg:mr-2 top-1/2 translate-1/2"
                       href="#"
                     >
@@ -54,56 +62,56 @@ const productPage = () => {
                           d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
                         ></path>
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                   <div className="flex-wrap hidden -mx-2 md:flex">
                     <div className="w-1/2 p-2 sm:w-1/4">
-                      <a
+                      <Link
                         className="block border border-gray-200 hover:border-indigo-400 dark:border-gray-700 dark:hover:border-indigo-300"
                         href="#"
                       >
                         <img
                           className="object-contain w-full lg:h-28"
-                          src="https://i.postimg.cc/Z5KhRkD6/download-1-removebg-preview.png"
+                          src={prod.images[0]}
                           alt=""
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="w-1/2 p-2 sm:w-1/4">
-                      <a
+                      <Link
                         className="block border border-gray-200 hover:border-indigo-400 dark:border-gray-700 dark:hover:border-indigo-300"
                         href="#"
                       >
                         <img
                           className="object-contain w-full lg:h-28"
-                          src="https://i.postimg.cc/8kJBrw03/download-removebg-preview.png"
+                          src={prod.images[1]}
                           alt=""
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="w-1/2 p-2 sm:w-1/4">
-                      <a
+                      <Link
                         className="block border border-gray-200 hover:border-blue-400 dark:border-gray-700 dark:hover:border-blue-300"
                         href="#"
                       >
                         <img
                           className="object-contain w-full lg:h-28"
-                          src="https://i.postimg.cc/0jwyVgqz/Microprocessor1-removebg-preview.png"
+                          src={prod.images[2]}
                           alt=""
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="w-1/2 p-2 sm:w-1/4">
-                      <a
+                      <Link
                         className="block border border-gray-200 hover:border-indigo-400 dark:border-gray-700 dark:hover:border-indigo-300"
                         href="#"
                       >
                         <img
                           className="object-contain w-full lg:h-28"
-                          src="https://i.postimg.cc/0N4Kk1PN/black-microprocessors-removebg-preview.png"
+                          src={prod.images[3]}
                           alt=""
                         />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -115,7 +123,7 @@ const productPage = () => {
                       New Arrival
                     </span>
                     <h2 className="max-w-xl mt-6 mb-6 text-xl font-semibold leading-loose tracking-wide text-gray-700 md:text-2xl dark:text-gray-300">
-                      Microsoft Surface Laptop 4
+                      {prod.title}
                     </h2>
                     <div className="flex flex-wrap items-center mb-6">
                       <ul className="flex mb-4 mr-2 lg:mb-0">
@@ -125,17 +133,17 @@ const productPage = () => {
                             <IconProductPage key={i} />
                           ))}
                       </ul>
-                      <a
+                      <Link
                         className="mb-4 text-xs underline hover:text-blue-600 dark:text-gray-400 dark:hover:text-gray-300 lg:mb-0"
                         href="#"
                       >
                         View the store
-                      </a>
+                      </Link>
                     </div>
                     <p className="inline-block text-2xl font-semibold text-gray-700 dark:text-gray-400 ">
-                      <span>$ 1,500</span>
+                      <span>$ {prod.price}</span>
                       <span className="ml-3 text-base font-normal text-gray-500 line-through dark:text-gray-400">
-                        $ 1,650
+                        {prod.price + 100}
                       </span>
                     </p>
                   </div>
@@ -299,20 +307,20 @@ const productPage = () => {
                         </svg>
                       </button>
                     </div>
-                    <a
+                    <Link
                       href="#"
                       className="w-full px-4 py-3 text-center text-white bg-indigo-600  border border-blue-600 dark:hover:bg-gray-700 dark:text-white dark:border-gray-700 dark:bg-gray-700 hover:bg-indigo-700 hover:text-white lg:w-1/2 rounded-xl"
                     >
                       Add to cart
-                    </a>
+                    </Link>
                   </div>
                   <div className="flex gap-4 mb-6">
-                    <a
+                    <Link
                       href="#"
                       className="w-full px-4 py-3 text-center text-white bg-indigo-600 border border-transparent dark:border-gray-700 hover:border-blue-500 hover:text-white hover:bg-indigo-700 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-900 rounded-xl"
                     >
                       Buy now
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -325,4 +333,4 @@ const productPage = () => {
   );
 };
 
-export default productPage;
+export default ProductsPage;

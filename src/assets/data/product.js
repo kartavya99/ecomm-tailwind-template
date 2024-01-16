@@ -1,6 +1,6 @@
 const products = [
   {
-    id: "1",
+    id: 1,
     title: "iPhone 9",
     description: "An apple mobile which is nothing like apple",
     price: 549,
@@ -19,7 +19,7 @@ const products = [
     ],
   },
   {
-    id: "2",
+    id: 2,
     title: "iPhone X",
     description:
       "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
@@ -38,7 +38,7 @@ const products = [
     ],
   },
   {
-    id: "3",
+    id: 3,
     title: "Samsung Universe 9",
     description:
       "Samsung's new variant which goes beyond Galaxy to the Universe",
@@ -52,7 +52,7 @@ const products = [
     images: ["https://cdn.dummyjson.com/product-images/3/1.jpg"],
   },
   {
-    id: "4",
+    id: 4,
     title: "OPPOF19",
     description: "OPPO F19 is officially announced on April 2021.",
     price: 280,
@@ -71,7 +71,7 @@ const products = [
     ],
   },
   {
-    id: "5",
+    id: 5,
     title: "Huawei P30",
     description:
       "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
@@ -89,7 +89,7 @@ const products = [
     ],
   },
   {
-    id: "6",
+    id: 6,
     title: "MacBook Pro",
     description:
       "MacBook Pro 2021 with mini-LED display may launch between September, November",
@@ -108,7 +108,7 @@ const products = [
     ],
   },
   {
-    id: "7",
+    id: 7,
     title: "Samsung Galaxy Book",
     description:
       "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
@@ -127,7 +127,7 @@ const products = [
     ],
   },
   {
-    id: "8",
+    id: 8,
     title: "Microsoft Surface Laptop 4",
     description:
       "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
@@ -147,7 +147,7 @@ const products = [
     ],
   },
   {
-    id: "9",
+    id: 9,
     title: "Infinix INBOOK",
     description:
       "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
@@ -167,7 +167,7 @@ const products = [
     ],
   },
   {
-    id: "10",
+    id: 10,
     title: "HP Pavilion 15-DK1056WM",
     description:
       "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
