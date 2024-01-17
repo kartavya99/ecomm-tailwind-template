@@ -64,7 +64,7 @@ const Nav = () => {
             <li>
               <Link
                 className="md:p-4 py-3 px-0 block md:mb-0 mb-2 uppercase "
-                to="#"
+                to="/contact"
               >
                 Contact Us
               </Link>

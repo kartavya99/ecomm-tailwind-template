@@ -316,7 +316,7 @@ const ProductsPage = () => {
                   </div>
                   <div className="flex gap-4 mb-6">
                     <Link
-                      to="#"
+                      to="/checkout"
                       className="w-full px-4 py-3 text-center text-white bg-indigo-600 border border-transparent dark:border-gray-700 hover:border-blue-500 hover:text-white hover:bg-indigo-700 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-900 rounded-xl"
                     >
                       Buy now

@@ -251,9 +251,12 @@ const Cart = () => {
                     </Link>
                   </div>
                   <div className="flex items-center justify-between ">
-                    <button className="block w-full py-4 font-bold text-center text-gray-100 uppercase bg-indigo-500 rounded-md hover:bg-indigo-600">
+                    <Link
+                      to="/checkout"
+                      className="block w-full py-4 font-bold text-center text-gray-100 uppercase bg-indigo-500 rounded-md hover:bg-indigo-600"
+                    >
                       Checkout
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
